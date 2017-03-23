@@ -28,7 +28,6 @@ public class OrtnecTests extends GooglePage {
             SelenideElement result = $$(By.xpath(".//*[@class='g']")).get(i).$(By.xpath(".//*[@class='r']"));
             result.click(); // Click on i-link from result table.
 //            Find search text on page and check that it's displayed:
-//            SelenideElement textOrtnec = $(By.xpath("html/body//*[contains(text(),'ortnec') or contains(text(),'Ortnec')]")).shouldBe(visible);
             rp.textOrtnec.shouldBe(visible);
             getWebDriver().navigate().back(); // go to back on result page.
         }
